@@ -1,8 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, showcasing my skills, projects, and experiences as a Computer Engineering student.
 
-First, run the development server:
+## 🚀 Features
+
+- Responsive design with Tailwind CSS
+- Smooth animations with Framer Motion
+- Dark theme with pink accents
+- Contact form with EmailJS integration
+- Interactive skill cards
+- Project showcase
+- Experience timeline
+- Mobile-friendly navigation
+
+## 🛠️ Built With
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [EmailJS](https://www.emailjs.com/) - Email functionality
+- [React Icons](https://react-icons.github.io/react-icons/) - Icons
+
+## 🏃‍♂️ Getting Started
+
+1. Clone the repository:
 
 ```bash
 npm run dev
