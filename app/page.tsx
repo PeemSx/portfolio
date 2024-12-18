@@ -11,7 +11,7 @@ export default function Home() {
         className="text-center"
       >
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Hi, I'm <span className="text-pink-500">Supanat</span>
+          Hi! I am <span className="text-pink-500">Supanat</span>
         </h1>
         <h2 className="text-2xl md:text-4xl font-bold mb-6">
           Welcome to my <span className="text-pink-500">Portfolio</span>

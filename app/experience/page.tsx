@@ -15,12 +15,12 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: 'Computer Engineering Student',
-    organization: 'Your University',
-    period: '2020 - Present',
+    title: 'CEDT Student',
+    organization: 'Chulalongkorn University',
+    period: '2023 - Present',
     description: 'Studying Computer Engineering with a focus on Web Development, Data Science, and Machine Learning.',
-    images: ['/experiences/university1.jpg', '/experiences/university2.jpg'],
-    link: 'https://university-website.com'
+    images: ['/images/exp1.jpg', '/images/exp2.jpg'],
+    link: 'https://www.cp.eng.chula.ac.th/cedt'
   },
   // Add more experiences here
 ]
@@ -46,7 +46,7 @@ function ExperienceCard({ title, organization, period, description, images, link
           {images.map((image, index) => (
             <motion.div
               key={index}
-              className="relative h-48 rounded-lg overflow-hidden"
+              className="relative h-72 rounded-lg overflow-hidden"
               whileHover={{ scale: 1.05 }}
             >
               <Image

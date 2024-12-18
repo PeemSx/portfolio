@@ -5,11 +5,15 @@ import React from 'react'
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description of project 1',
-    githubUrl: 'https://github.com/yourusername/project1',
-    liveUrl: 'https://project1.com',
-    image: '/project1.jpg',
+    title: 'Simple Flash Card',
+    description: 'This was a group project for my introduction to web development class. We used HTML, CSS, and JavaScript to create a simple flash card system. It was a fun project to work on with my friends.',
+    githubUrl: 'https://github.com/PeemSx/flash_card.git',
+    liveUrl: '',
+    images: [
+      '/images/flashcard1.png',
+      '/images/flashcard2.png',
+
+    ],
   },
   // Add more projects here
 ]

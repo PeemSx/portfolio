@@ -13,17 +13,17 @@ interface ContactForm {
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/YourGitHubUsername',
+    url: 'https://github.com/PeemSx',
     icon: FaGithub,
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/YourLinkedInUsername',
+    url: 'https://www.linkedin.com/in/supanat-kampapan-8561b023a/',
     icon: FaLinkedin,
   },
   {
     name: 'Email',
-    url: 'mailto:your.email@example.com',
+    url: 'mailto:p.supanat2547@gmail.com',
     icon: FaEnvelope,
   },
 ]
@@ -39,7 +39,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('sending')
-
+    console.log(status)
     try {
         await emailjs.send(
             process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
@@ -52,6 +52,7 @@ export default function Contact() {
             process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
           )
       setStatus('sent')
+      console.log(status)
       setFormData({ name: '', email: '', message: '' })
     } catch (error) {
       setStatus('error')
