@@ -29,6 +29,7 @@ const socialLinks = [
 ]
 
 export default function Contact() {
+  
   const [formData, setFormData] = useState<ContactForm>({
     name: '',
     email: '',
@@ -37,10 +38,13 @@ export default function Contact() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
   const handleSubmit = async (e: React.FormEvent) => {
+
     e.preventDefault()
     setStatus('sending')
     console.log(status)
+
     try {
+      
         await emailjs.send(
             process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
             process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
@@ -49,7 +53,8 @@ export default function Contact() {
               from_email: formData.email,
               message: formData.message,
             },
-            process.env.EMAILJS_PUBLIC_KEY
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_VAR!
+            
           )
       setStatus('sent')
       console.log(status)
