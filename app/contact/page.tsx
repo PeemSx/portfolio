@@ -49,7 +49,7 @@ export default function Contact() {
               from_email: formData.email,
               message: formData.message,
             },
-            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            process.env.EMAILJS_PUBLIC_KEY
           )
       setStatus('sent')
       console.log(status)
